@@ -17,4 +17,14 @@ public class SolicitarPedidoController {
 
         return pedido;
     }
+
+    @GetMapping("/criar")
+    public Pedido criarTodosPedidos() {
+        Pedido pedido = new Pedido();
+
+        pedido.setPedido("papel");
+        pedido.setDescricao("cliente 1");
+
+        return pedido;
+    }
 }
